@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.clearfix:after, .clearfix:before {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wrapRace{
+    width: 100%;
+    height: 300px;
+    perspective-origin: center center;
+    -moz-perspective-origin: center center;
+    -webkit-perspective-origin: center center;
+    perspective: 500px;
+    -moz-perspective: 500px;
+    -webkit-perspective: 500px;
+    background: black;
+    overflow: hidden;
+}
+
+.RaceSpace{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: 3d;
+    -moz-transform-style: 3d;
+    -webkit-transform-style: 3d;
+    background-image: url("../images/road.png");
+    background-size: cover;
+    transform: rotateX(9deg);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4.1%;
+    /*background-color: #fa0;*/
+}
+.slideRoad img,.RaceSpace img{
+    width: 100%;
+}
+.slideRoad{
+    position: absolute;
+    left: 0;
+    transform: rotateX(9deg);
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation: roadMove 1s linear infinite;
+    animation-delay: 2s;
+    -webkit-animation-name: roadMove;
+    -moz-animation-name: roadMove;
+}
+.startLine{
+    position: absolute;
+    top: 49px;
+    transform: rotateX(10deg);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    animation: startLineMove 10s linear;
+    animation-delay: 2s;
+    -webkit-animation-name: startLineMove;
+    -moz-animation-name:startLineMove ;
+}
+
+.endLine{
+    position: absolute;
+    bottom: -100px;
+    /*-webkit-animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    animation: endLineMove 10s linear;
+    animation-delay: 2s;
+    -webkit-animation-name: endLineMove;
+    -moz-animation-name:endLineMove ;*/
+}
+.startLine img,.endLine img{
+    width: 96%;
+}
+.wrapCar > *{
+    float: left;
+}
+.car{
+    width: 9.5%;
+    margin-left: 0.5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    transform: rotateX(10deg);
+}
+.car img{
+    width: 100%;
+}
+.racePlace{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 13px;
+    left: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1%;
+    z-index: 5;
+}
+.racePlace > *{
+    float: left;
+}
+.raceScore{
+    width: 10%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.raceScore img {
+    width: 100%;
+}
+/*.scoreLine{
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    border: none;
+    position: absolute;
+    bottom: 15%;
+}*/
+.reciprocal{
+    position: absolute;
+    background-image: url("../images/bg_reciprocal.png");
+    background-size: cover;
+    width: 100%;
+    height: 80px;
+    top: 42%;
+}
+.reciprocal > *{
+    float: left;
+}
+.raceLight{
+    position: absolute;
+    width: 12%;
+    left: 44%;
+}
+.raceWood{
+    position: absolute;
+    width: 25%;
+    left: 18%;
+    top: -60%;
+}
+.raceNumber{
+    margin-top: -10px;
+}
+.reciprocal img, .light img, .raceNumber img, .raceWood img{
+    width: 100%;
+}
+#score1, #score2, #score3, #score4, #score5, #score6, #score7, #score8, #score9, #score10{
+    position: absolute;
+}
+#score1{
+    left: 2%;
+}
+#score2{
+    left: 11.5%;
+}
+#score3{
+    left: 21.5%;
+}
+#score4{
+    left: 31.5%;
+}
+#score5{
+    left: 41.5%;
+}
+#score6{
+    left: 51.5%;
+}
+#score7{
+    left:61.5%;
+}
+#score8{
+    left: 71.5%;
+}
+#score9{
+    left: 80.5%;
+}
+#score10{
+    left: 89%;
+}
+@keyframes roadMove {
+    0%{margin-top: 0px;}
+    100%{margin-top: -303px;}
+}
+@keyframes startLineMove {/*起點*/
+    0%{margin-top: 0px;}
+    20%{margin-top: -300px;}
+    100%{margin-top: -300px;}
+}
+
+/*平板*/
+@media screen and (min-width:481px) and (max-width:768px){
+
+/*跑道長度*/
+.wrapRace{
+  height: 450px;
+}
+
+/*跑道大小與位置*/
+.RaceSpace{
+  width: 110%;
+  margin-left: -5%;
+  background-repeat: no-repeat;
+  top:-7%;
+  transform: rotateX(20deg);
+}
+
+/*名次板後的黑塊*/
+.racePlace{
+  bottom: 1.6%;
+  height: 15%;
+}
+
+/*名次大小*/
+.raceScore img {
+    width: 90%;
+}
+
+/*名次版div的padding*/
+.raceScore{
+  padding: 2%;
+}
+
+/*各個名次表的位置*/
+#score1{
+    left: 0.5%;
+    top: 10%;
+}
+#score2{
+    left: 9.5%;
+    top: 10%;
+}
+#score3{
+    left: 19%;
+    top: 10%;
+}
+#score4{
+    left: 28.5%;
+    top: 10%;
+}
+#score5{
+    left: 38.5%;
+    top: 10%;
+}
+#score6{
+    left: 49%;
+    top: 10%;
+}
+#score7{
+    left: 59.5%;
+    top: 10%;
+}
+#score8{
+    left: 70%;
+    top: 10%;
+}
+#score9{
+    left: 80%;
+    top: 10%;
+}
+#score10{
+    left: 90%;
+    top: 10%;
+}
+
+/*背景條位置*/
+.reciprocal{
+  height: 75px;
+}
+
+/*旗子圖片大小*/
+.raceWood{
+    width: 20%;
+    left: 30%;
+}
+
+/*號誌燈*/
+.raceLight {
+    width: 10%;
+    left:50%;
+}
+
+/*倒數54321*/
+.raceNumber{
+  margin-left: 12px;
+}
+
+.raceNumber img{
+  width: 80%;
+}
+
+}
+
+
+/*手機*/
+@media screen and (max-width:480px){
+  /*跑道長度*/
+  .wrapRace{
+    height: 450px;
+  }
+
+
+
+}
