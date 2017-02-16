@@ -46,9 +46,9 @@ function countdownfunc() {
             transition: ".7s"
         }, 100, "linear");
 
-        // animateDiv();//亂數 車子
-        // repeat();// 賽道
-        // scoreRepeat();//名次
+        animateDiv();//亂數 車子
+        repeat();// 賽道
+        scoreRepeat();//名次
     }
     if (countdownnumber == -1) {//倒數消失
         var reciprocal = document.getElementById('raceReciprocal');

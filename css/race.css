@@ -302,8 +302,133 @@
 @media screen and (max-width:480px){
   /*跑道長度*/
   .wrapRace{
-    height: 450px;
+    height: 400px;
   }
+
+  /*跑道大小與位置*/
+  .RaceSpace{
+    width: 110%;
+    margin-left: -6.5%;
+    background-repeat: no-repeat;
+    top:-7%;
+    transform: rotateX(20deg);
+  }
+
+  /*起跑線*/
+  .startLine{
+    top:70px;
+  }
+
+/*起跑線圖片大小*/
+  .startLine img{
+    width: 98%;
+  }
+
+/*10部車的DIV*/
+  .wrapCar{
+      float: left;
+  }
+
+  .car{
+      width: 9.5%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      transform: rotateX(10deg);
+  }
+
+  /*名次板後的黑塊*/
+  .racePlace{
+    bottom: 1.6%;
+    height: 11%;
+  }
+
+  /*名次大小*/
+  .raceScore img {
+      width: 88%;
+  }
+
+  /*名次版div的padding*/
+  .raceScore{
+    padding: 2%;
+  }
+
+  /*各個名次表的位置*/
+  #score1{
+      left: 1%;
+      top: 10%;
+  }
+  #score2{
+      left: 10%;
+      top: 10%;
+  }
+  #score3{
+      left: 20%;
+      top: 10%;
+  }
+  #score4{
+      left: 30%;
+      top: 10%;
+  }
+  #score5{
+      left: 40%;
+      top: 10%;
+  }
+  #score6{
+      left: 50%;
+      top: 10%;
+  }
+  #score7{
+      left: 60%;
+      top: 10%;
+  }
+  #score8{
+      left: 70%;
+      top: 10%;
+  }
+  #score9{
+      left: 80%;
+      top: 10%;
+  }
+  #score10{
+      left: 90%;
+      top: 10%;
+  }
+
+  /*背景條位置*/
+  .reciprocal{
+    height: 60px;
+  }
+
+  /*旗子圖片大小*/
+  .raceWood{
+      width: 22%;
+      left: 22%;
+  }
+
+  /*號誌燈*/
+  .raceLight {
+      width: 14%;
+      left: 48%;
+  }
+
+  /*倒數54321*/
+  .raceNumber{
+    margin-left: 12px;
+  }
+
+  .raceNumber img{
+    width: 80%;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
