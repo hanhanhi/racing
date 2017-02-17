@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/race.css">
+    <link rel="stylesheet" href="./css/race.css">
     <title>Racing Car</title>
 </head>
 <body>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="wrapRace">
-        <div id="fullScreen"></div>
+        <div class="fullScreen" id="fullScreen"></div>
         <div class="RaceSpace">
-            <div class="slideRoad"><!--路滑動-->
-                <!-- <img src="./images/road.png"> -->
+            <div class="racePlace clearfix"><!-- 分數-->
+                <div class="raceScore" id="score1">
+                    <img src="./images/car_number1.png">
+                </div>
+                <div class="raceScore" id="score2">
+                    <img src="./images/car_number2.png">
+                </div>
+                <div class="raceScore" id="score3">
+                    <img src="./images/car_number3.png">
+                </div>
+                <div class="raceScore" id="score4">
+                    <img src="./images/car_number4.png">
+                </div>
+                <div class="raceScore" id="score5">
+                    <img src="./images/car_number5.png">
+                </div>
+                <div class="raceScore" id="score6">
+                    <img src="./images/car_number6.png">
+                </div>
+                <div class="raceScore" id="score7">
+                    <img src="./images/car_number7.png">
+                </div>
+                <div class="raceScore" id="score8">
+                    <img src="./images/car_number8.png">
+                </div>
+                <div class="raceScore" id="score9">
+                    <img src="./images/car_number9.png">
+                </div>
+                <div class="raceScore" id="score10">
+                    <img src="./images/car_number10.png">
+                </div>
             </div>
             <div class="startLine" id="startLine"><!-- 起跑線 -->
                 <img src="./images/grid.png">
@@ -55,40 +83,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="racePlace clearfix"><!-- 分數-->
-            <div class="raceScore" id="score1">
-                <img src="./images/car_number1.png">
-            </div>
-            <div class="raceScore" id="score2">
-                <img src="./images/car_number2.png">
-            </div>
-            <div class="raceScore" id="score3">
-                <img src="./images/car_number3.png">
-            </div>
-            <div class="raceScore" id="score4">
-                <img src="./images/car_number4.png">
-            </div>
-            <div class="raceScore" id="score5">
-                <img src="./images/car_number5.png">
-            </div>
-            <div class="raceScore" id="score6">
-                <img src="./images/car_number6.png">
-            </div>
-            <div class="raceScore" id="score7">
-                <img src="./images/car_number7.png">
-            </div>
-            <div class="raceScore" id="score8">
-                <img src="./images/car_number8.png">
-            </div>
-            <div class="raceScore" id="score9">
-                <img src="./images/car_number9.png">
-            </div>
-            <div class="raceScore" id="score10">
-                <img src="./images/car_number10.png">
-            </div>
-        </div>
-
         <div class="reciprocal" id="raceReciprocal"><!-- 倒數 -->
             <div class="raceWood">
                 <img src="./images/flag.png">
@@ -97,7 +91,7 @@
                 <div class="light">
                     <img src="./images/red_light.png" id="raceLight">
                 </div>
-                <div class="raceNumber">
+                <div class="raceNumber rubberBand">
                     <img src="./images/sec_5.png" id="raceNum">
                 </div>
             </div>
