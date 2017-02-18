@@ -1,18 +1,16 @@
-    * {
+*{
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 .clearfix:after, .clearfix:before {
-    content: "";
-    clear: both;
-    display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
-
-.wrapRace {
+.wrapRace{
     width: 100%;
-    height: 300px;
+    height: 350px;
     perspective-origin: center center;
     -moz-perspective-origin: center center;
     -webkit-perspective-origin: center center;
@@ -22,8 +20,7 @@
     background: black;
     overflow: hidden;
 }
-
-.RaceSpace {
+.RaceSpace{
     width: 100%;
     height: 100%;
     position: relative;
@@ -37,12 +34,10 @@
     box-sizing: border-box;
     padding: 4.1%;
 }
-
-.RaceSpace img {
+.RaceSpace img{
     width: 100%;
 }
-
-.startLine {
+.startLine{
     position: absolute;
     top: 49px;
     transform: rotateX(10deg);
@@ -50,32 +45,27 @@
     box-sizing: border-box;
 }
 
-.endLine {
+.endLine{
     position: absolute;
     bottom: -100px;
 }
-
-.startLine img, .endLine img {
+.startLine img,.endLine img{
     width: 95%;
 }
-
-.wrapCar>* {
+.wrapCar > *{
     float: left;
 }
-
-.car {
+.car{
     width: 9.5%;
     margin-left: 0.5%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     transform: rotateX(10deg);
 }
-
-.car img {
+.car img{
     width: 100%;
 }
-
-.racePlace {
+.racePlace{
     background-color: black;
     width: 100%;
     height: 50px;
@@ -87,23 +77,19 @@
     z-index: 5;
     padding: 1%;
 }
-
-.racePlace>* {
+.racePlace > *{
     float: left;
 }
-
-.raceScore {
+.raceScore{
     width: 10%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 2%;
 }
-
 .raceScore img {
     width: 100%;
 }
-
-.scoreLine {
+.scoreLine{
     background-color: #fff;
     width: 100%;
     height: 1px;
@@ -111,8 +97,7 @@
     position: absolute;
     bottom: 15%;
 }
-
-.reciprocal {
+.reciprocal{
     position: absolute;
     background-image: url("../images/bg_reciprocal.png");
     background-size: cover;
@@ -120,292 +105,170 @@
     height: 80px;
     top: 42%;
 }
-
-.reciprocal>* {
+.reciprocal > *{
     float: left;
 }
-
-.raceLight {
+.raceLight{
     position: absolute;
     width: 12%;
     left: 44%;
 }
-
-.raceWood {
+.raceWood{
     position: absolute;
     width: 25%;
     left: 18%;
     top: -60%;
 }
-
-.raceNumber {
+.raceNumber{
     margin-top: -10px;
 }
-
-.reciprocal img, .light img, .raceNumber img, .raceWood img {
+.reciprocal img, .light img, .raceNumber img, .raceWood img{
     width: 100%;
 }
-
-#score1, #score2, #score3, #score4, #score5, #score6, #score7, #score8, #score9, #score10 {
+#score1, #score2, #score3, #score4, #score5, #score6, #score7, #score8, #score9, #score10{
     position: absolute;
     bottom: 0px;
 }
-
-#score1, #score2, #score3 {
+#score1, #score2, #score3{
     transform: scale(1.3);
 }
-
-#score4, #score5, #score6, #score7, #score8, #score9, #score10 {
+#score4, #score5, #score6, #score7, #score8, #score9, #score10{
     bottom: -4px;
 }
-
-#score1 {
+#score1{
     left: 1.5%;
 }
-
-#score2 {
+#score2{
     left: 11.5%;
 }
-
-#score3 {
+#score3{
     left: 21.5%;
 }
-
-#score4 {
+#score4{
     left: 31.5%;
 }
-
-#score5 {
+#score5{
     left: 40.5%;
 }
-
-#score6 {
+#score6{
     left: 50.5%;
 }
-
-#score7 {
-    left: 60.5%;
+#score7{
+    left:60.5%;
 }
-
-#score8 {
+#score8{
     left: 70.5%;
 }
-
-#score9 {
+#score9{
     left: 80.5%;
 }
-
-#score10 {
+#score10{
     left: 89%;
 }
-
-#fire {
+#fire1, #fire2, #fire3, #fire4, #fire5, #fire6 ,#fire7, #fire8, #fire9, #fire10{
     position: absolute;
-    top: -46px;
-    transform: rotate(270deg) scale(3);
+    width: 92%;
+    height: auto;
+    top: -50px;
+    left: 4%;
+    opacity: 0;
 }
-
-#fullScreen {
+#fullScreen{
     position: absolute;
     background-color: black;
     width: 100%;
     height: 100%;
-    z-index: 20;
+    z-index: 10;
     opacity: 0;
 }
-
-@keyframes roadMove {
-    0% {
-        margin-top: 0px;
-    }
-    100% {
-        margin-top: -303px;
-    }
-}
-
-@media screen and (max-width:430px) {
-    .reciprocal {
+@media screen and (max-width:430px){
+    .reciprocal{
         height: 50px;
     }
-    .RaceSpace {
+    .RaceSpace{
         background-size: contain;
     }
 }
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
 
-/*手機*/
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
 
-@media screen and (max-width:480px) {
-    /*跑道長度*/
-    .wrapRace {
-        height: 400px;
-    }
-    /*跑道大小與位置*/
-    .RaceSpace {
-        width: 110%;
-        margin-left: -6.5%;
-        background-repeat: no-repeat;
-        top: -7%;
-        transform: rotateX(20deg);
-    }
-    /*起跑線*/
-    .startLine {
-        top: 70px;
-    }
-    /*起跑線圖片大小*/
-    .startLine img {
-        width: 98%;
-    }
-    /*10部車的DIV*/
-    .wrapCar {
-        float: left;
-    }
-    .car {
-        width: 9.5%;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        transform: rotateX(10deg);
-    }
-    /*名次板後的黑塊*/
-    .racePlace {
-        bottom: 1.6%;
-        height: 11%;
-    }
-    /*名次大小*/
-    .raceScore img {
-        width: 88%;
-    }
-    /*名次版div的padding*/
-    .raceScore {
-        padding: 2%;
-    }
-    /*各個名次表的位置*/
-    #score1 {
-        left: 1%;
-        top: 10%;
-    }
-    #score2 {
-        left: 10%;
-        top: 10%;
-    }
-    #score3 {
-        left: 20%;
-        top: 10%;
-    }
-    #score4 {
-        left: 30%;
-        top: 10%;
-    }
-    #score5 {
-        left: 40%;
-        top: 10%;
-    }
-    #score6 {
-        left: 50%;
-        top: 10%;
-    }
-    #score7 {
-        left: 60%;
-        top: 10%;
-    }
-    #score8 {
-        left: 70%;
-        top: 10%;
-    }
-    #score9 {
-        left: 80%;
-        top: 10%;
-    }
-    #score10 {
-        left: 90%;
-        top: 10%;
-    }
-    /*背景條位置*/
-    .reciprocal {
-        height: 60px;
-    }
-    /*旗子圖片大小*/
-    .raceWood {
-        width: 22%;
-        left: 22%;
-    }
-    /*號誌燈*/
-    .raceLight {
-        width: 14%;
-        left: 48%;
-    }
-    /*倒數54321*/
-    .raceNumber {
-        margin-left: 12px;
-    }
-    .raceNumber img {
-        width: 80%;
-    }
-    @-webkit-keyframes rubberBand {
-        from {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-        }
-        30% {
-            -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
-        }
-        40% {
-            -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
-        }
-        50% {
-            -webkit-transform: scale3d(1.15, 0.85, 1);
-            transform: scale3d(1.15, 0.85, 1);
-        }
-        65% {
-            -webkit-transform: scale3d(.95, 1.05, 1);
-            transform: scale3d(.95, 1.05, 1);
-        }
-        75% {
-            -webkit-transform: scale3d(1.05, .95, 1);
-            transform: scale3d(1.05, .95, 1);
-        }
-        to {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-        }
-    }
-    @keyframes rubberBand {
-        from {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-        }
-        30% {
-            -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
-        }
-        40% {
-            -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
-        }
-        50% {
-            -webkit-transform: scale3d(1.15, 0.85, 1);
-            transform: scale3d(1.15, 0.85, 1);
-        }
-        65% {
-            -webkit-transform: scale3d(.95, 1.05, 1);
-            transform: scale3d(.95, 1.05, 1);
-        }
-        75% {
-            -webkit-transform: scale3d(1.05, .95, 1);
-            transform: scale3d(1.05, .95, 1);
-        }
-        to {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-        }
-    }
-    .rubberBand {
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-name: rubberBand;
-        animation-name: rubberBand;
-        animation-iteration-count: infinite;
-    }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+    animation-iteration-count: infinite;
+}
